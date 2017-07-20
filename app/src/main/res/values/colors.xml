@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EF6C00</color>
+    <color name="colorPrimaryDark">#E65100</color>
+    <color name="colorAccent">#FF5722</color>
+
+    <!-- Primary color for the editor -->
+    <color name="editorColorPrimary">#6D4C41</color>
+
+    <!-- Primary dark color for the editor -->
+    <color name="editorColorPrimaryDark">#3E2723</color>
+
+    <!-- Background color for ItemActivity -->
+    <color name="tan_background">#FFF3E0</color>
+
+    <color name="text_view_title">#6D4C41</color>
+
+    <color name="text_view_subtitle">#757575</color>
+</resources>

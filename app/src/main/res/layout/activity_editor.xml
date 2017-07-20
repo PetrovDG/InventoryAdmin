@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/scroll_view"
+    tools:context="info.geostage.inventoryadmin.EditorActivity">
+
+    <LinearLayout style="@style/main_vertical_linear_layout">
+
+        <TextView
+            android:id="@+id/image_text"
+            style="@style/empty_view_title"
+            android:layout_gravity="center"
+            android:textColor="@color/text_view_title" />
+
+        <ImageView
+            android:id="@+id/image_view"
+            style="@style/image_view"
+            android:background="@drawable/ic_picture_frame"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/product_name_title"
+            style="@style/text_view_title"
+            android:layout_gravity="center"
+            android:text="@string/product_name_title" />
+
+        <EditText
+            android:id="@+id/product_name_edit"
+            style="@style/EditorStyle"
+            android:hint="@string/hintProductName"
+            android:inputType="textCapWords"
+            android:nextFocusDown="@+id/price_edit" />
+
+        <TextView
+            android:id="@+id/price_title"
+            style="@style/text_view_title"
+            android:layout_gravity="center"
+            android:text="@string/product_price_title" />
+
+        <RelativeLayout style="@style/edit_relative_layout">
+
+            <EditText
+                android:id="@+id/price_edit"
+                style="@style/EditorStyle"
+                android:hint="@string/hintProductPrice"
+                android:inputType="number"
+                android:maxLength="10"
+                android:nextFocusDown="@+id/quantity_edit" />
+
+            <TextView
+                android:id="@+id/label_price_units"
+                style="@style/EditorUnitsStyle"
+                android:text="@string/product_price_unit" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/quantity_title"
+            style="@style/text_view_title"
+            android:layout_gravity="center"
+            android:text="@string/quantity_title" />
+
+        <LinearLayout style="@style/horizontal_linear_layout">
+
+            <ImageButton
+                android:id="@+id/decrease_quantity"
+                android:layout_width="@dimen/zero_width"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@xml/button_rounded_corner"
+                android:src="@drawable/ic_decrease_quantity"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/quantity_edit"
+                android:layout_width="@dimen/zero_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:hint="@string/hintProductQuantity"
+                android:inputType="number"
+                android:maxLength="15"
+                android:nextFocusDown="@+id/supplier_name_edit" />
+
+            <ImageButton
+                android:id="@+id/increase_quantity"
+                android:layout_width="@dimen/zero_width"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@xml/button_rounded_corner"
+                android:src="@drawable/ic_increase_quantity"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/supplier_name_title"
+            style="@style/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/supplier_name_title" />
+
+        <EditText
+            android:id="@+id/supplier_name_edit"
+            style="@style/EditorStyle"
+            android:hint="@string/hintSupplierName"
+            android:inputType="textCapWords"
+            android:nextFocusDown="@+id/supplier_phone_edit" />
+
+        <TextView
+            android:id="@+id/supplier_phone_title"
+            style="@style/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/supplier_phone_title" />
+
+        <EditText
+            android:id="@+id/supplier_phone_edit"
+            style="@style/EditorStyle"
+            android:hint="@string/hintSupplierPhone"
+            android:inputType="phone"
+            android:nextFocusDown="@+id/supplier_email_edit" />
+
+        <TextView
+            android:id="@+id/supplier_email_title"
+            style="@style/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/supplier_email_title" />
+
+        <EditText
+            android:id="@+id/supplier_email_edit"
+            style="@style/EditorStyle"
+            android:hint="@string/hintSupplierEmail"
+            android:inputType="textEmailAddress" />
+
+        <RelativeLayout style="@style/relative_layout">
+
+            <LinearLayout style="@style/order_vertical_linear_layout">
+
+                <TextView
+                    android:id="@+id/order"
+                    style="@style/text_view_title"
+                    android:layout_gravity="center"
+                    android:text="@string/order_title" />
+
+                <LinearLayout style="@style/horizontal_linear_layout">
+
+                    <ImageButton
+                        android:id="@+id/decrease_order"
+                        android:layout_width="@dimen/zero_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@xml/button_rounded_corner"
+                        android:src="@drawable/ic_decrease_quantity"
+                        tools:ignore="ContentDescription" />
+
+                    <EditText
+                        android:id="@+id/order_edit"
+                        android:layout_width="@dimen/zero_width"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:hint="@string/hintProductQuantity"
+                        android:inputType="number"
+                        android:maxLength="15" />
+
+                    <ImageButton
+                        android:id="@+id/increase_order"
+                        android:layout_width="@dimen/zero_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@xml/button_rounded_corner"
+                        android:src="@drawable/ic_increase_quantity"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/horizontal_linear_layout">
+
+                    <Button
+                        android:id="@+id/order_more_email"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/order_email" />
+
+                    <Button
+                        android:id="@+id/order_more_phone"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/order_phone" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

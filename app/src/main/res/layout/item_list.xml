@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/horizontal_linear_layout"
+    android:background="@color/tan_background">
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/item_image"
+        android:layout_width="@dimen/list_item_width"
+        android:layout_height="@dimen/list_item_height"
+        android:src="@drawable/empty_box_sad"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        style="@style/main_vertical_linear_layout"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/item_name"
+            style="@style/empty_view_title"
+            tools:text="Product Name" />
+
+        <TextView
+            android:id="@+id/product_price"
+            style="@style/empty_view_subtitle"
+            android:text="@string/product_price_title" />
+
+        <LinearLayout
+            style="@style/horizontal_linear_layout">
+
+            <TextView
+                android:id="@+id/label_price_units"
+                style="@style/empty_view_subtitle"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:paddingStart="@dimen/padding"
+                android:text="@string/product_price_unit" />
+
+            <TextView
+                android:id="@+id/price"
+                style="@style/empty_view_subtitle" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/product_quantity"
+            style="@style/empty_view_subtitle"
+            android:text="@string/currentQuantity" />
+
+        <TextView
+            android:id="@+id/quantity"
+            style="@style/empty_view_subtitle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/main_vertical_linear_layout"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/sell"
+            style="@style/empty_view_subtitle"
+            android:text="@string/sellOne" />
+
+        <ImageButton
+            android:id="@+id/sell_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@xml/button_rounded_corner"
+            android:src="@drawable/ic_action_sell"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+
+<resources>
+    <!-- Margin around the floating action button in ItemActivity -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Height and width of each list item -->
+    <dimen name="list_item_height">100dp</dimen>
+    <dimen name="list_item_width">85dp</dimen>
+
+    <dimen name="image_size">150dp</dimen>
+    <dimen name="image_width">180dp</dimen>
+    <dimen name="zero_width">0dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="double_padding">16dp</dimen>
+    <dimen name="margin">4dp</dimen>
+</resources>

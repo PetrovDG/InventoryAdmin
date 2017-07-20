@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Inventory Admin</string>
+    <!-- Name for the menu action bar  -->
+    <string name="menu">menu</string>
+
+    <!-- Label for overflow menu option that inserts fake item data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all items data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Items</string>
+
+    <!-- Title text for the empty view, which describes the empty box image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">No items</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add an item [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding an item to your inventory</string>
+
+    <!-- Title for the activity to add a new item [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_item">Add new item</string>
+
+    <!-- Title for the activity to edit an existing item [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_edit_item">Edit item</string>
+
+    <!-- Label for editor menu option to save item and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current item [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current item [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Toast message in editor when current item was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_item_successful">Item deleted</string>
+
+    <!-- Toast message in editor when current item has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_item_failed">Error with deleting item</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current item [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this item?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current item [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current item [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Editor Layout texts -->
+    <string name="add_image_text">Tap to add an image of your item!</string>
+    <string name="change_image_text">Tap to change the image of your item!</string>
+    <string name="product_name_title">Product Name:</string>
+    <string name="product_price_title">Product Price:</string>
+    <string name="quantity_title">Quantity:</string>
+    <string name="supplier_name_title">Supplier Name:</string>
+    <string name="supplier_phone_title">Supplier Phone:</string>
+    <string name="supplier_email_title">Supplier E-mail:</string>
+    <string name="hintProductName">Name</string>
+    <string name="hintProductPrice">Price</string>
+    <string name="hintProductQuantity">Quantity</string>
+    <string name="hintSupplierName">Supplier Name</string>
+    <string name="hintSupplierPhone">Supplier Phone</string>
+    <string name="hintSupplierEmail">Supplier E-mail</string>
+    <string name="product_price_unit">"\u20ac"</string>
+    <string name="order_title">Order from supplier</string>
+    <string name="order_email">Order by E-mail</string>
+    <string name="order_phone">Order by Phone</string>
+    <string name="quantity_cant_be_below_zero">Quantity cannot have value below 0!</string>
+    <string name="order_cant_be_below_zero">Order cannot have value below 0!</string>
+    <string name="declare_items_number_to_order">You need to declare number of items to make an order</string>
+    <string name="declare_grater_number">You need to declare a number grater than 0</string>
+    <string name="intentType">image/*</string>
+    <string name="selectPicture">Please select a picture</string>
+
+    <!-- List Layout texts -->
+    <string name="currentQuantity">Current Quantity:</string>
+    <string name="sellOne">Sell</string>
+
+    <!--E-mail data texts-->
+    <string name="new_order">New Order</string>
+    <string name="hello">Hello</string>
+    <string name="exclamation_mark">!</string>
+    <string name="request">We would like to order</string>
+    <string name="units_of">units of</string>
+    <string name="point">.</string>
+</resources>
